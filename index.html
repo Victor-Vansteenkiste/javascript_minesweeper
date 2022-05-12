@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+    </head>
+
+    <body>
+    <div class="title">
+        <h1>MINESWEEPER</h1>
+    </div>
+    <div class = "total_display">   
+        <div id = "input_container" class="input_container">
+            <label for="width" class="label_input" > Width of field: </label>
+            <br>
+            <input type="number" id="width_field" value="10" name="width" class="input"/>
+            <br>
+            <br>
+            <label for="height" class="label_input" > Height of field: </label>
+            <br>     
+            <input type="number" id="height_field" value="10" name="height" class="input"/>
+            <br>
+            <br>
+            <button type = "button" id="button_1" onclick="change_dimensions_field()">ENTER</button>
+        </div>
+
+        <div id="field_container"></div>
+
+        <div class = "top_bar">
+            <table class="timer_counter">
+                <tr>
+                    <td id = "clicks"></td><td><button type = "button" id="button_2" onclick="new_game()"><img src="smiley.png" alt="picture of smiley" width="40" height="40"></button></td><td id = "timer"></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>   
+    </body>
+</html>
